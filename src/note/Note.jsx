@@ -54,9 +54,9 @@ export default function Note({note}){
     }else{
         component =(
             <>
-            <h1 className="font-semibold text-xl text-gray-900">{note.title}</h1>
-            <h4 className="font-medium">{note.category}</h4>
-            <p className="text-gray-900">{note.content}</p>
+            <h1 className="font-semibold text-xl text-gray-900 break-words">{note.title}</h1>
+            <h4 className="font-medium break-words">{note.category}</h4>
+            <p className="text-gray-900 break-words">{note.content}</p>
             <div className="flex justify-between mt-5">
                 <span onClick={()=>{setIsEdit(true)}}>
                     <svg className="w-10 h-10 rounded-xl border border-gray-400 p-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.24264 17.9967H3V13.754L14.435 2.319C14.8256 1.92848 15.4587 1.92848 15.8492 2.319L18.6777 5.14743C19.0682 5.53795 19.0682 6.17112 18.6777 6.56164L7.24264 17.9967ZM3 19.9967H21V21.9967H3V19.9967Z"></path></svg>
